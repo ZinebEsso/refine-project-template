@@ -5,11 +5,8 @@ import { Suspense } from "react";
 const BlogPostListComponent = dynamic(() => import("@components/blog/list"), {
   ssr: false,
   loading: () => <LoadingSpinner /> 
-
 });
 const BlogPostList = ()=> {
-
- 
   return (
     <Suspense fallback={<LoadingSpinner />}>
       <BlogPostListComponent  />
