@@ -9,7 +9,7 @@ export default function IndexPage() {
   return (
     <Suspense>
       <Authenticated key="home-page">
-        <NavigateToResource />
+        <NavigateToResource resource="blog_posts" />
       </Authenticated>
     </Suspense>
   );

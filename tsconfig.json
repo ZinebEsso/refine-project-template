@@ -28,7 +28,7 @@
       ],
       "@pages/*": [
         "./pages/*"
-      ]
+      ],
     },
     "incremental": true
   },

@@ -1,7 +1,7 @@
 
 "use client";
 
-import { ColorModeContext } from "@contexts/color-mode";
+import { ColorModeContext } from "@context/color-mode";
 import type { RefineThemedLayoutV2HeaderProps } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
 import {
@@ -75,7 +75,7 @@ export const Header: React.FC<RefineThemedLayoutV2HeaderProps> = ({
         ) : (
           <Space style={{ marginLeft: "8px" }} size="middle">
             <Text strong>{user?.name || "Guest"}</Text>
-            <Avatar src={avatarSrc} alt={user?.name || "User"} />
+            <Avatar  src={avatarSrc} alt={user?.name || "User"} />
           </Space>
         )}
       </Space>
